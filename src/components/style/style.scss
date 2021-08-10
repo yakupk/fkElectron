@@ -1,0 +1,149 @@
+@import "./normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+* {
+  outline: none !important;
+}
+
+::-moz-selection {
+  background: transparent !important;
+  color: inherit !important;
+}
+::selection {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.numpad {
+  height: 81vh;
+  box-shadow: -15px 15px 25px -10px #00000069;
+  position: relative;
+  right: -18px;
+  margin-top: 20px;
+}
+
+.alphanumeric {
+  background-color: #000;
+  height: 36vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0px -15px 45px -5px #0000009e;
+}
+
+.kioksModal {
+  padding: 140px;
+  box-sizing: content-box;
+  width: 70% !important;
+  height: 30vh;
+  margin-top: -10vh;
+}
+
+.kioksModal .ant-modal-content {
+  border-radius: 5px;
+  box-shadow: 1px 10px 35px -5px rgba(32, 32, 32, 0.877);
+}
+
+.kioksModal .ant-modal-content .ant-modal-body {
+  padding: 0;
+}
+
+.kioksModal .ant-modal-content .ant-modal-body .ant-modal-confirm-body-wrapper {
+}
+
+.kioksModal
+  .ant-modal-content
+  .ant-modal-body
+  .ant-modal-confirm-body-wrapper
+  .ant-modal-confirm-body {
+  min-height: 200px;
+  padding: 0;
+}
+
+.kioksModal
+  .ant-modal-content
+  .ant-modal-body
+  .ant-modal-confirm-body-wrapper
+  .ant-modal-confirm-btns {
+  float: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.kioksModal
+  .ant-modal-content
+  .ant-modal-body
+  .ant-modal-confirm-body-wrapper
+  .ant-modal-confirm-body
+  span {
+  font-size: 2rem;
+}
+
+.kioksModal
+  .ant-modal-content
+  .ant-modal-body
+  .ant-modal-confirm-body-wrapper
+  .ant-modal-confirm-btns
+  button {
+  width: 96%;
+  border: none;
+  border-radius: 0;
+  padding: 15px 10px 60px;
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: #333;
+}
+
+.kioksModal
+  .ant-modal-content
+  .ant-modal-body
+  .ant-modal-confirm-body-wrapper
+  .ant-modal-confirm-body
+  span.ant-modal-confirm-title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 35px;
+  font-size: 3rem;
+}
+
+.kioksModal
+  .ant-modal-content
+  .ant-modal-body
+  .ant-modal-confirm-body-wrapper
+  .ant-modal-confirm-body
+  .ant-modal-confirm-content {
+  font-size: 2rem;
+  margin: 10px 0 35px;
+  padding: 10px 30px;
+}
+
+.ant-table-wrapper.payment {
+  width: 40vw;
+  margin: 0 auto;
+  border: 1px solid #d2d2d2;
+  min-height: 60vh;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: -23vh;
+  box-shadow: -10px 5px 25px -15px #000;
+}
+.ant-table-wrapper.payment td.ant-table-cell:first-child {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ant-table-wrapper.payment td.ant-table-cell {
+  font-size: 1.4rem;
+  border-color: #d2d2d2;
+}

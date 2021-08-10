@@ -1,0 +1,126 @@
+.prepaidCardPage {
+  .cardRead {
+    top: 50vh;
+    left: 34%;
+  }
+}
+
+.partialPaymentPageQueryResult {
+  background: linear-gradient(to bottom,  #f5e6d0 0%,#ec8c28 100%);
+}
+
+.selectedRow {
+  background-color: #fff !important;
+}
+
+.dashboardPage {
+  z-index: 99999999999999999;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+
+  span {
+    display: block;
+    margin: 250px auto 0;
+    position: relative;
+    z-index: 99999;
+    font-size: 80px;
+  }
+}
+
+.card {
+  width: 600px;
+  height: 790px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  .top {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    ul.dots {
+      display: inline-block;
+      list-style-type: none;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 30px 0;
+      li {
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        margin-right: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+    h3 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 22px;
+      letter-spacing: 4px;
+      margin-top: 30px;
+    }
+  }
+
+  .content form .input_container {
+    width: 100%;
+    padding: 25px 40px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #ededed;
+    }
+    label {
+      float: left;
+      vertical-align: top;
+      width: 30%;
+      height: 22px;
+      font-size: 16px;
+      padding-left: 20px;
+      letter-spacing: 2px;
+    }
+    span{
+      margin-left : 20px;
+      font-size: 18px;
+      font-weight : 500;
+    }
+
+  }
+}
+
+.bottom_content {
+  text-align: center;
+  background-color: #28314e;
+  line-height: 71px;
+  color: white;
+  font-size: 14px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  i {
+    margin-left: 10px;
+    line-height: 10px;
+  }
+}
+
+.ripple {
+  position: relative;
+  margin-top: 20px !important;
+  .rippling {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0.4;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}

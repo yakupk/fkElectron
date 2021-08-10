@@ -1,0 +1,157 @@
+.disabled {
+  button:before {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+}
+
+.calc_body {
+  // grid-template: 1.5fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  width: 100%;
+  display: grid;
+  grid-gap: 30px 20px;
+  max-width: 680px;
+  padding: 0 17px;
+
+  button {
+    position: relative;
+    background: linear-gradient(-15deg, #000, #4d4d4d);
+    font-size: 3.45rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px 0px;
+    border-radius: 8px;
+    color: #fff;
+    height: 8.5vh;
+    line-height: 50%;
+
+    &:active {
+      background: linear-gradient(-25deg, #db8018, #d9a300) !important;
+      border-color: #944f00 !important;
+    }
+  }
+}
+
+.btn_reset {
+  grid-row: 6;
+  grid-column: 1;
+  color: #fff !important;
+  background: rgb(155, 2, 2) !important;
+  border-color: rgb(75, 0, 0) !important;
+}
+
+.btn_del {
+  grid-row: 6;
+  grid-column: 3;
+  background: rgb(6, 161, 223) !important;
+  border-color: rgb(156, 156, 4) !important;
+
+  * {
+    font-size: 1.75rem;
+    position: relative;
+    top: -4px;
+    color: #fff;
+  }
+}
+
+.btn_plus {
+  grid-row: 5;
+  grid-column: 4;
+}
+
+.btn_minus {
+  grid-row: 4;
+  grid-column: 4;
+}
+
+.btn_times {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+.btn_divide {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.btn_clear {
+  grid-row: 2;
+  grid-column: 1;
+  background: hsla(1, 75%, 60%, 1);
+  color: var(--off-white);
+
+  &:active {
+    background: hsla(1, 75%, 50%, 1);
+  }
+}
+
+.btn_dot {
+  grid-row: 6;
+  grid-column: 2;
+}
+
+.btn_zero {
+  grid-row: 6;
+  grid-column: 2;
+}
+
+.btn_one {
+  grid-row: 5;
+  grid-column: 1;
+}
+
+.btn_two {
+  grid-row: 5;
+  grid-column: 2;
+}
+
+.btn_three {
+  grid-row: 5;
+  grid-column: 3;
+}
+
+.btn_four {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.btn_five {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.btn_six {
+  grid-row: 4;
+  grid-column: 3;
+}
+
+.btn_seven {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.btn_eight {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.btn_nine {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.btn_pos_neg {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+/**** Responsive Design ****/
+@media screen and (max-width: 420px), screen and (max-height: 420px) {
+  .display {
+    font-size: 7vmin;
+  }
+}

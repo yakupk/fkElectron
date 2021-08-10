@@ -1,0 +1,37 @@
+.timer {
+  position: fixed;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #333;
+  text-align: center;
+  right: 1%;
+  top: 1%;
+  z-index: 99999;
+  box-shadow: 0px -2px 25px -5px #000;
+}
+
+.timer .progress {
+  position: absolute;
+  top: -24px;
+  left: -25px;
+  transition: all 1s ease-in-out;
+  zoom: 0.65;
+}
+
+.timer p {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.timer .result {
+  margin: 5px 0 -10px;
+  font-size: 3.2rem;
+  line-height: 60px;
+}
+
+.timer .sec {
+  font-size: 1.2rem;
+}

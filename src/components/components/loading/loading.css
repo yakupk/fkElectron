@@ -1,0 +1,71 @@
+.mini-loaders {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  text-align: center;
+}
+.box-mini {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  font-size: 30px;
+  padding: 20px;
+  position: relative;
+  vertical-align: top;
+  transition: 0.3s color, 0.3s border, 0.3s transform, 0.3s opacity;
+  margin: 10px auto;
+  opacity: 0.9;
+}
+.loader-time {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  color: inherit;
+  pointer-events: none;
+}
+
+.loader-time {
+  background: #fff;
+  box-shadow: inset 0px 0px 0px 0.1em currentcolor;
+  border-radius: 50%;
+  position: relative;
+  padding: 20px;
+}
+.loader-time:after,
+.loader-time:before {
+  position: absolute;
+  content: "";
+  background-color: currentcolor;
+  height: 4px;
+  top: 45%;
+  left: 50%;
+  transform-origin: left center;
+}
+.loader-time:after {
+  width: 16px;
+  animation: loader-time 2s linear infinite;
+}
+.loader-time:before {
+  width: 12px;
+  animation: loader-time 8s linear infinite;
+}
+
+@keyframes loader-time {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.react-lock-screen {
+  filter: none !important;
+}
